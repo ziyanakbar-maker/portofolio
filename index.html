@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio resmi Ziyan - Frontend & Web Developer. Menampilkan proyek web modern, profil keahlian, dan kontak profesional.">
+  <meta name="author" content="Ziyan">
+  <title>Ziyan | Portofolio Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="avatar.svg">
+
+  <!-- Framework: Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100" tabindex="0">
+
+  <!-- =========================================================================
+       1. HEADER & NAVIGASI SEMANTIK (<header> & <nav>)
+       ========================================================================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+      <div class="container">
+        <!-- Logo Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#beranda">
+          <span class="brand-badge">Z</span>
+          <span class="brand-name">Ziyan<span>.dev</span></span>
+        </a>
+
+        <!-- Hamburger Button untuk Tampilan Mobile (≈ 375px) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#beranda"><i class="bi bi-house-door me-1"></i> Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang"><i class="bi bi-person me-1"></i> Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyek"><i class="bi bi-code-slash me-1"></i> Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak"><i class="bi bi-envelope me-1"></i> Kontak</a>
+            </li>
+            <!-- Opsi Halaman Terpisah -->
+            <li class="nav-item dropdown ms-lg-2">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-journals me-1"></i> Halaman
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0">
+                <li><a class="dropdown-item py-2" href="tentang.html"><i class="bi bi-person-lines-fill me-2 text-primary"></i>Detail Tentang Saya</a></li>
+                <li><a class="dropdown-item py-2" href="kontak.html"><i class="bi bi-chat-square-text me-2 text-primary"></i>Halaman Kontak Khusus</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a href="#kontak" class="btn btn-primary btn-sm px-3">
+                <i class="bi bi-send-fill"></i> Hubungi Saya
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       2. KONTEN UTAMA SEMANTIK (<main>)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         BAGIAN 1: BERANDA (HERO SECTION) (<section id="beranda">)
+         ----------------------------------------------------------------------- -->
+    <section id="beranda" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Kolom Teks / Intro -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="status-indicator">
+              <span class="status-dot"></span>
+              <span>Tersedia untuk Magang &amp; Freelance Proyek</span>
+            </div>
+
+            <h1 class="hero-title">
+              Halo, Saya <span class="gradient-text">Ziyan</span>.<br>
+              Web Developer &amp; UI/UX Enthusiast.
+            </h1>
+
+            <p class="hero-description">
+              Membangun website responsif, interaktif, dan modern dengan fokus pada performa kode, struktur semantik, serta pengalaman pengguna (UX) yang menyenangkan di semua ukuran layar.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
+              <a href="#proyek" class="btn btn-primary px-4 py-2">
+                <i class="bi bi-briefcase-fill"></i> Lihat Proyek Saya
+              </a>
+              <a href="#kontak" class="btn btn-outline-secondary px-4 py-2">
+                <i class="bi bi-chat-dots"></i> Diskusikan Proyek
+              </a>
+              <a href="#tentang" class="btn btn-outline-primary px-4 py-2">
+                <i class="bi bi-file-earmark-person"></i> Biodata Lengkap
+              </a>
+            </div>
+
+            <!-- Social Links & Quick Contact -->
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 pt-2">
+              <span class="text-muted small fw-semibold">Temukan saya:</span>
+              <div class="d-flex gap-2">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Ziyan">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Ziyan">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Ziyan">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:ziyan.dev@example.com" class="social-btn" aria-label="Kirim Email ke Ziyan">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Foto Avatar Interaktif -->
+          <div class="col-lg-5 text-center">
+            <div class="avatar-wrapper">
+              <div class="avatar-img-container">
+                <img src="avatar.svg" alt="Avatar Ilustrasi Ziyan - Web Developer" class="avatar-img" width="380" height="380">
+              </div>
+
+              <!-- Floating Badges Interaktif -->
+              <div class="floating-badge floating-badge-1">
+                <i class="bi bi-bootstrap-fill text-primary fs-5"></i>
+                <div class="text-start">
+                  <div class="fw-bold text-dark" style="font-size: 0.8rem;">Bootstrap 5</div>
+                  <div class="text-muted" style="font-size: 0.7rem;">Grid &amp; Responsive UI</div>
+                </div>
+              </div>
+
+              <div class="floating-badge floating-badge-2">
+                <i class="bi bi-check-circle-fill text-success fs-5"></i>
+                <div class="text-start">
+                  <div class="fw-bold text-dark" style="font-size: 0.8rem;">100% Responsif</div>
+                  <div class="text-muted" style="font-size: 0.7rem;">Mobile (375px) &amp; Desktop</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Highlight Bar -->
+        <div class="row g-3 mt-4 pt-4 border-top border-slate-200">
+          <div class="col-6 col-md-3">
+            <div class="hero-stat-card">
+              <div class="hero-stat-number">4+</div>
+              <p class="hero-stat-label">Proyek Selesai</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="hero-stat-card">
+              <div class="hero-stat-number">100%</div>
+              <p class="hero-stat-label">Desain Responsif</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="hero-stat-card">
+              <div class="hero-stat-number">Semantic</div>
+              <p class="hero-stat-label">HTML5 Terstruktur</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="hero-stat-card">
+              <div class="hero-stat-number">Clean</div>
+              <p class="hero-stat-label">Kode Rapi &amp; Standar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         BAGIAN 2: TENTANG SAYA (<section id="tentang">)
+         ----------------------------------------------------------------------- -->
+    <section id="tentang" class="about-section">
+      <div class="container">
+        <!-- Judul Bagian -->
+        <div class="text-center mb-5">
+          <span class="section-badge"><i class="bi bi-person-badge"></i> Tentang Saya</span>
+          <h2 class="section-title">Dedikasi Membangun Web yang Fungsional &amp; Indah</h2>
+          <p class="section-subtitle">
+            Mengenal lebih dekat perjalanan saya di bidang rekayasa web, teknologi yang saya kuasai, dan nilai-nilai yang saya pegang.
+          </p>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <!-- Kolom Deskripsi & Filosofi -->
+          <div class="col-lg-6">
+            <h3 class="h4 mb-3 fw-bold text-dark">
+              Saya seorang Web Developer yang antusias terhadap clean code dan arsitektur responsif.
+            </h3>
+            <p class="text-muted mb-3">
+              Perjalanan pemrograman saya berakar dari rasa ingin tahu yang mendalam tentang bagaimana sebuah antarmuka web dapat menghubungkan pengguna dengan kebutuhan mereka secara mulus. Saya menguasai fondasi <strong>HTML5 Semantik</strong>, styling modern dengan <strong>Bootstrap 5</strong> dan <strong>Tailwind CSS</strong>, serta logika dinamis dengan <strong>JavaScript</strong>.
+            </p>
+            <p class="text-muted mb-4">
+              Setiap baris kode yang saya tulis mengutamakan kerapian tampilan, aksesibilitas (a11y), fleksibilitas di layar ponsel (≈ 375px), hingga kenyamanan browsing di layar desktop lebar.
+            </p>
+
+            <!-- Poin Keunggulan -->
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="feature-box">
+                  <div class="feature-icon-wrap bg-primary-subtle text-primary">
+                    <i class="bi bi-phone-flip"></i>
+                  </div>
+                  <h4 class="h6 fw-bold mb-1">Mobile-First Approach</h4>
+                  <p class="text-muted small mb-0">Tampilan rapi tanpa overflow pada layar 375px hingga monitor ultra-wide.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-box">
+                  <div class="feature-icon-wrap bg-success-subtle text-success">
+                    <i class="bi bi-tags-fill"></i>
+                  </div>
+                  <h4 class="h6 fw-bold mb-1">HTML5 Semantik</h4>
+                  <p class="text-muted small mb-0">Memanfaatkan tag header, nav, main, section, dan footer untuk SEO &amp; aksesibilitas.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tombol ke Halaman Lengkap -->
+            <div class="mt-4">
+              <a href="tentang.html" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-arrow-right-circle"></i> Buka Halaman Profil Lengkap &amp; Riwayat
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Keterampilan & Skill Bar -->
+          <div class="col-lg-6">
+            <div class="p-4 p-md-5 rounded-4 bg-light border border-slate-200">
+              <h3 class="h5 fw-bold mb-4 text-dark d-flex align-items-center gap-2">
+                <i class="bi bi-cpu-fill text-primary"></i> Penguasaan Teknologi
+              </h3>
+
+              <!-- Skill 1 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-label">
+                  <span><i class="bi bi-filetype-html text-danger me-1"></i> HTML5 Semantik</span>
+                  <span class="text-primary font-mono">95%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="HTML5 Semantik" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-label">
+                  <span><i class="bi bi-bootstrap-fill text-primary me-1"></i> Bootstrap 5 &amp; Responsive CSS</span>
+                  <span class="text-primary font-mono">92%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Bootstrap 5" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-label">
+                  <span><i class="bi bi-filetype-js text-warning me-1"></i> JavaScript (ES6+) &amp; DOM</span>
+                  <span class="text-primary font-mono">85%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-label">
+                  <span><i class="bi bi-git text-danger me-1"></i> Git Version Control &amp; GitHub</span>
+                  <span class="text-primary font-mono">88%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Git & GitHub" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <!-- Tools & Badges -->
+              <h4 class="h6 fw-bold mt-4 mb-3 text-dark">Tools &amp; Ekosistem Pendukung:</h4>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-tag"><i class="bi bi-layers-fill text-info"></i> Tailwind CSS</span>
+                <span class="skill-tag"><i class="bi bi-vector-pen text-warning"></i> Figma UI</span>
+                <span class="skill-tag"><i class="bi bi-database text-success"></i> MySQL</span>
+                <span class="skill-tag"><i class="bi bi-filetype-php text-primary"></i> PHP</span>
+                <span class="skill-tag"><i class="bi bi-terminal text-dark"></i> Bash / CLI</span>
+                <span class="skill-tag"><i class="bi bi-lightning-charge text-warning"></i> REST API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         BAGIAN 3: PROYEK (MINIMAL 3 ITEM) (<section id="proyek">)
+         ----------------------------------------------------------------------- -->
+    <section id="proyek" class="projects-section">
+      <div class="container">
+        <!-- Judul Bagian -->
+        <div class="text-center mb-5">
+          <span class="section-badge"><i class="bi bi-collection-play"></i> Galeri Portofolio</span>
+          <h2 class="section-title">Koleksi Proyek Unggulan</h2>
+          <p class="section-subtitle">
+            Daftar karya aplikasi web nyata yang dirancang dengan struktur responsif, estetika modern, dan kode berkualitas.
+          </p>
+        </div>
+
+        <!-- Grid Proyek (Minimal 3, disini disediakan 4 Proyek Lengkap) -->
+        <div class="row g-4">
+
+          <!-- PROYEK 1: TokoKita E-Commerce -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <article class="project-card">
+              <div class="project-thumbnail">
+                <span class="project-badge-top"><i class="bi bi-cart3"></i> Web Store</span>
+                <img src="images/project-ecommerce.svg" alt="Tampilan Antarmuka Proyek E-Commerce TokoKita" loading="lazy">
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">TokoKita - Platform E-Commerce Modern</h3>
+                <p class="project-description">
+                  Platform belanja daring interaktif yang dilengkapi katalog produk responsif, fitur filter kategori, keranjang belanja (shopping cart), dan simulasi checkout pembayaran.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-pill"><i class="bi bi-bootstrap text-primary"></i> Bootstrap 5</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-html text-danger"></i> HTML5 Semantik</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-js text-warning"></i> Vanilla JS</span>
+                  <span class="tech-pill"><i class="bi bi-phone"></i> Mobile Responsive</span>
+                </div>
+                <div class="project-card-footer">
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProject1">
+                    <i class="bi bi-eye"></i> Detail Proyek
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm" aria-label="Lihat Kode Sumber TokoKita di GitHub">
+                    <i class="bi bi-github"></i> Kode Sumber
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROYEK 2: TaskFlow Kanban Board -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <article class="project-card">
+              <div class="project-thumbnail">
+                <span class="project-badge-top"><i class="bi bi-kanban"></i> Productivity</span>
+                <img src="images/project-taskflow.svg" alt="Tampilan Antarmuka Aplikasi TaskFlow Kanban" loading="lazy">
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">TaskFlow - Manajemen Tugas &amp; Kanban</h3>
+                <p class="project-description">
+                  Aplikasi produktivitas manajemen proyek dengan papan alur kerja (To Do, In Progress, Done), penanda prioritas, indikator persentase, dan persistensi data lokal.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-pill"><i class="bi bi-bootstrap text-primary"></i> Bootstrap 5</span>
+                  <span class="tech-pill"><i class="bi bi-hdd-network text-success"></i> LocalStorage API</span>
+                  <span class="tech-pill"><i class="bi bi-arrows-move text-info"></i> Drag &amp; Drop</span>
+                  <span class="tech-pill"><i class="bi bi-check2-square"></i> Task Tracker</span>
+                </div>
+                <div class="project-card-footer">
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                    <i class="bi bi-eye"></i> Detail Proyek
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm" aria-label="Lihat Kode Sumber TaskFlow di GitHub">
+                    <i class="bi bi-github"></i> Kode Sumber
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROYEK 3: PortalWarta Media Kampus -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <article class="project-card">
+              <div class="project-thumbnail">
+                <span class="project-badge-top"><i class="bi bi-newspaper"></i> Media Portal</span>
+                <img src="images/project-portal.svg" alt="Tampilan Antarmuka Portal Warta Berita Kampus" loading="lazy">
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">PortalWarta - Portal Berita &amp; Informasi</h3>
+                <p class="project-description">
+                  Situs media warta dinamis dengan pengelompokan rubrik berita, artikel headline bergambar, widget agenda kampus terbaru, dan tata letak grid berita adaptif di seluler.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-pill"><i class="bi bi-bootstrap text-primary"></i> Bootstrap 5</span>
+                  <span class="tech-pill"><i class="bi bi-filetype-php text-primary"></i> PHP</span>
+                  <span class="tech-pill"><i class="bi bi-database text-info"></i> MySQL</span>
+                  <span class="tech-pill"><i class="bi bi-layout-text-window-reverse"></i> Semantic Grid</span>
+                </div>
+                <div class="project-card-footer">
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProject3">
+                    <i class="bi bi-eye"></i> Detail Proyek
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm" aria-label="Lihat Kode Sumber PortalWarta di GitHub">
+                    <i class="bi bi-github"></i> Kode Sumber
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROYEK 4: WeatherID Dashboard Cuaca -->
+          <div class="col-12 col-md-6 col-lg-6">
+            <article class="project-card">
+              <div class="project-thumbnail">
+                <span class="project-badge-top"><i class="bi bi-cloud-sun"></i> Web API</span>
+                <img src="images/project-weather.svg" alt="Tampilan Antarmuka WeatherID Dashboard Cuaca" loading="lazy">
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">WeatherID - Dashboard Cuaca Real-Time</h3>
+                <p class="project-description">
+                  Dashboard pemantauan cuaca berbasis integrasi REST API dengan prakiraan 4 hari ke depan, indikator kelembaban udara, kecepatan angin, dan deteksi koordinat otomatis.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-pill"><i class="bi bi-lightning text-warning"></i> OpenWeather API</span>
+                  <span class="tech-pill"><i class="bi bi-bootstrap text-primary"></i> Bootstrap 5</span>
+                  <span class="tech-pill"><i class="bi bi-geo-alt text-danger"></i> Geolocation</span>
+                  <span class="tech-pill"><i class="bi bi-moon-stars"></i> Dynamic Theme</span>
+                </div>
+                <div class="project-card-footer">
+                  <button type="button" class="btn btn-primary btn-sm flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalProject4">
+                    <i class="bi bi-eye"></i> Detail Proyek
+                  </button>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm" aria-label="Lihat Kode Sumber WeatherID di GitHub">
+                    <i class="bi bi-github"></i> Kode Sumber
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -----------------------------------------------------------------------
+         BAGIAN 4: KONTAK (<section id="kontak">)
+         ----------------------------------------------------------------------- -->
+    <section id="kontak" class="contact-section">
+      <div class="container">
+        <!-- Judul Bagian -->
+        <div class="text-center mb-5">
+          <span class="section-badge"><i class="bi bi-chat-quote"></i> Kontak &amp; Kolaborasi</span>
+          <h2 class="section-title">Mari Terhubung &amp; Berkolaborasi</h2>
+          <p class="section-subtitle">
+            Tertarik untuk merekrut, mengajak kolaborasi proyek, atau sekadar berdiskusi seputar web development? Silakan hubungi saya melalui formulir atau kanal di bawah.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <!-- Kolom Informasi Kontak Langsung -->
+          <div class="col-lg-5">
+            <h3 class="h4 fw-bold mb-4 text-dark">Informasi Kontak Langsung</h3>
+
+            <!-- Card Email -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="bi bi-envelope-at-fill"></i>
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1 text-dark">Email Resmi</h4>
+                <a href="mailto:ziyan.dev@example.com" class="text-decoration-none text-muted small d-block">
+                  ziyan.dev@example.com
+                </a>
+                <span class="badge bg-success-subtle text-success mt-1">Respon Cepat (1x24 Jam)</span>
+              </div>
+            </div>
+
+            <!-- Card WhatsApp / Telepon -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1 text-dark">WhatsApp &amp; Telepon</h4>
+                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted small d-block">
+                  +62 812-3456-7890
+                </a>
+                <span class="text-muted small">Senin - Sabtu (08:00 - 18:00 WIB)</span>
+              </div>
+            </div>
+
+            <!-- Card Lokasi -->
+            <div class="contact-card">
+              <div class="contact-icon-box">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-1 text-dark">Domisili / Lokasi</h4>
+                <address class="text-muted small mb-0">
+                  DKI Jakarta, Indonesia
+                </address>
+                <span class="text-muted small">Tersedia untuk Remote &amp; On-Site Work</span>
+              </div>
+            </div>
+
+            <!-- Halaman Kontak Terpisah Callout -->
+            <div class="p-3 bg-primary-subtle rounded-3 border border-primary-subtle mt-4">
+              <div class="d-flex align-items-center gap-2 mb-1">
+                <i class="bi bi-info-circle-fill text-primary"></i>
+                <span class="fw-bold text-dark small">Butuh formulir lebih lengkap?</span>
+              </div>
+              <p class="text-muted small mb-2">
+                Kunjungi halaman kontak khusus untuk FAQ, panduan konsultasi, dan informasi kolaborasi terperinci.
+              </p>
+              <a href="kontak.html" class="btn btn-sm btn-primary py-1 px-3">
+                <i class="bi bi-arrow-right"></i> Buka Halaman Kontak Khusus
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Formulir Pesan Interaktif -->
+          <div class="col-lg-7">
+            <div class="contact-form-box">
+              <h3 class="h4 fw-bold mb-2 text-dark">Kirim Pesan Langsung</h3>
+              <p class="text-muted small mb-4">
+                Isi formulir di bawah ini dan saya akan merespon pesan Anda secepatnya.
+              </p>
+
+              <!-- Notifikasi Feedback JS -->
+              <div id="formAlertSuccess" class="alert alert-success d-none alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>Terima kasih!</strong> Pesan Anda berhasil dikirim. Saya akan segera menghubungi Anda kembali.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <!-- Nama Pengirim -->
+                  <div class="col-md-6">
+                    <label for="senderName" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-person"></i></span>
+                      <input type="text" class="form-control" id="senderName" placeholder="Contoh: Budi Pratama" required>
+                    </div>
+                    <div class="invalid-feedback">Silakan masukkan nama lengkap Anda.</div>
+                  </div>
+
+                  <!-- Email Pengirim -->
+                  <div class="col-md-6">
+                    <label for="senderEmail" class="form-label">Alamat Email <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-envelope"></i></span>
+                      <input type="email" class="form-control" id="senderEmail" placeholder="nama@email.com" required>
+                    </div>
+                    <div class="invalid-feedback">Silakan masukkan alamat email yang valid.</div>
+                  </div>
+
+                  <!-- Subjek Pesan -->
+                  <div class="col-12">
+                    <label for="senderSubject" class="form-label">Subjek / Keperluan <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-card-heading"></i></span>
+                      <select class="form-select" id="senderSubject" required>
+                        <option value="" selected disabled>Pilih keperluan pesan...</option>
+                        <option value="Tawaran Proyek">Tawaran Proyek Web / Pembuatan Website</option>
+                        <option value="Kesempatan Kerja">Kesempatan Magang / Kerja Sama</option>
+                        <option value="Konsultasi">Konsultasi UI/UX &amp; Frontend</option>
+                        <option value="Lainnya">Lainnya / Diskusi Umum</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback">Silakan pilih subjek keperluan pesan.</div>
+                  </div>
+
+                  <!-- Pesan -->
+                  <div class="col-12">
+                    <label for="senderMessage" class="form-label">Isi Pesan <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="senderMessage" rows="5" placeholder="Tuliskan pesan, pertanyaan, atau rincian proyek Anda di sini..." required></textarea>
+                    <div class="invalid-feedback">Mohon tuliskan isi pesan Anda.</div>
+                  </div>
+
+                  <!-- Tombol Kirim -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary w-100 py-2 fs-6">
+                      <i class="bi bi-send-fill"></i> Kirim Pesan Sekarang
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================================
+       3. MODAL DETAIL PROYEK (INTERAKTIF BOOTSTRAP 5)
+       ========================================================================= -->
+  <!-- Modal Proyek 1 -->
+  <div class="modal fade" id="modalProject1" tabindex="-1" aria-labelledby="modalProject1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-light">
+          <h1 class="modal-title fs-5 fw-bold" id="modalProject1Label">TokoKita - Platform E-Commerce Modern</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img src="images/project-ecommerce.svg" alt="Preview TokoKita" class="img-fluid rounded-3 mb-3 w-100 shadow-sm">
+          <h2 class="h5 fw-bold text-dark">Deskripsi Proyek</h2>
+          <p class="text-muted">
+            TokoKita adalah platform belanja online responsif yang dirancang untuk memberikan pengalaman bertransaksi tanpa hambatan bagi pengguna ponsel maupun komputer desktop.
+          </p>
+          <h3 class="h6 fw-bold text-dark">Fitur Utama:</h3>
+          <ul class="text-muted small">
+            <li>Katalog produk dinamis dengan sistem pencarian dan filter harga.</li>
+            <li>Keranjang belanja berbasis state JavaScript interaktif.</li>
+            <li>Validasi checkout form dengan pesan eror yang jelas.</li>
+            <li>Desain mobile-first yang nyaman dibuka pada ponsel lebar 375px.</li>
+          </ul>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <i class="bi bi-github"></i> Lihat Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyek 2 -->
+  <div class="modal fade" id="modalProject2" tabindex="-1" aria-labelledby="modalProject2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-light">
+          <h1 class="modal-title fs-5 fw-bold" id="modalProject2Label">TaskFlow - Manajemen Tugas &amp; Kanban</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img src="images/project-taskflow.svg" alt="Preview TaskFlow" class="img-fluid rounded-3 mb-3 w-100 shadow-sm">
+          <h2 class="h5 fw-bold text-dark">Deskripsi Proyek</h2>
+          <p class="text-muted">
+            TaskFlow mempermudah pengelolaan sprint dan pengerjaan tugas proyek harian menggunakan papan Kanban interaktif yang fleksibel.
+          </p>
+          <h3 class="h6 fw-bold text-dark">Fitur Utama:</h3>
+          <ul class="text-muted small">
+            <li>Kolom fleksibel: To Do, In Progress, dan Done dengan counter otomatis.</li>
+            <li>Tag prioritas dengan warna kode indikator (High, Medium, Low).</li>
+            <li>Penyimpanan otomatis ke browser storage sehingga data tidak hilang saat refresh.</li>
+            <li>Antarmuka ramah sentuhan (touch-friendly) untuk perangkat mobile.</li>
+          </ul>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <i class="bi bi-github"></i> Lihat Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyek 3 -->
+  <div class="modal fade" id="modalProject3" tabindex="-1" aria-labelledby="modalProject3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-light">
+          <h1 class="modal-title fs-5 fw-bold" id="modalProject3Label">PortalWarta - Portal Berita Kampus</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img src="images/project-portal.svg" alt="Preview PortalWarta" class="img-fluid rounded-3 mb-3 w-100 shadow-sm">
+          <h2 class="h5 fw-bold text-dark">Deskripsi Proyek</h2>
+          <p class="text-muted">
+            Platform portal warta digital yang menyajikan informasi akademik, prestasi mahasiswa, dan agenda kampus secara aktual dan tertata rapi.
+          </p>
+          <h3 class="h6 fw-bold text-dark">Fitur Utama:</h3>
+          <ul class="text-muted small">
+            <li>Susunan semantik HTML5 yang optimal untuk mesin pencari (SEO-friendly).</li>
+            <li>Navigasi kategori rubrik: Teknologi, Akademik, Opini, dan Acara.</li>
+            <li>Sistem pembacaan nyaman (readable typography) dengan penataan spasi proporsional.</li>
+          </ul>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <i class="bi bi-github"></i> Lihat Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyek 4 -->
+  <div class="modal fade" id="modalProject4" tabindex="-1" aria-labelledby="modalProject4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-light">
+          <h1 class="modal-title fs-5 fw-bold" id="modalProject4Label">WeatherID - Dashboard Cuaca Real-Time</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img src="images/project-weather.svg" alt="Preview WeatherID" class="img-fluid rounded-3 mb-3 w-100 shadow-sm">
+          <h2 class="h5 fw-bold text-dark">Deskripsi Proyek</h2>
+          <p class="text-muted">
+            Aplikasi dashboard cuaca interaktif yang menghubungkan API cuaca publik untuk menampilkan temperatur, kelembaban, dan prakiraan cuaca secara real-time.
+          </p>
+          <h3 class="h6 fw-bold text-dark">Fitur Utama:</h3>
+          <ul class="text-muted small">
+            <li>Pencarian cuaca berdasarkan nama kota di seluruh dunia.</li>
+            <li>Tampilan prakiraan cuaca 4 hari kedepan dengan visualisasi ikon adaptif.</li>
+            <li>Grafis kartu cuaca modern dan responsif di layar smartphone.</li>
+          </ul>
+        </div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+            <i class="bi bi-github"></i> Lihat Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       4. FOOTER SEMANTIK (<footer>)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Kolom Brand & Bio Singkat -->
+        <div class="col-lg-4 col-md-6">
+          <a class="d-flex align-items-center gap-2 text-decoration-none mb-3" href="#beranda">
+            <span class="brand-badge">Z</span>
+            <span class="brand-name text-white">Ziyan<span>.dev</span></span>
+          </a>
+          <p class="small text-secondary mb-3">
+            Portofolio web resmi Ziyan. Dibangun dengan framework Bootstrap 5, struktur HTML5 semantik lengkap, dan desain responsif mobile-first.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:ziyan.dev@example.com" class="social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Kolom Tautan Navigasi Cepat -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5>Navigasi</h5>
+          <ul class="footer-nav">
+            <li><a href="#beranda"><i class="bi bi-chevron-right small"></i> Beranda</a></li>
+            <li><a href="#tentang"><i class="bi bi-chevron-right small"></i> Tentang Saya</a></li>
+            <li><a href="#proyek"><i class="bi bi-chevron-right small"></i> Proyek</a></li>
+            <li><a href="#kontak"><i class="bi bi-chevron-right small"></i> Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Halaman Khusus -->
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5>Halaman Khusus</h5>
+          <ul class="footer-nav">
+            <li><a href="tentang.html"><i class="bi bi-person-fill small"></i> Halaman Tentang</a></li>
+            <li><a href="kontak.html"><i class="bi bi-chat-dots-fill small"></i> Halaman Kontak</a></li>
+            <li><a href="avatar.svg" target="_blank"><i class="bi bi-image small"></i> Avatar Vektor</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Spesifikasi & Ketentuan -->
+        <div class="col-lg-3 col-md-12">
+          <h5>Ketentuan Tugas</h5>
+          <div class="p-3 rounded-3 bg-slate-dark border border-secondary border-opacity-25 small text-secondary">
+            <div class="text-white fw-bold mb-1"><i class="bi bi-check2-all text-success me-1"></i> Standar Terpenuhi:</div>
+            <div>• Framework: Bootstrap 5</div>
+            <div>• 4 Bagian: Beranda, Tentang, Proyek (4), Kontak</div>
+            <div>• Responsif: Mobile (≈ 375px) &amp; Desktop</div>
+            <div>• Semantik: header, nav, main, section, footer</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-secondary">
+          &copy; 2026 <strong>Ziyan</strong>. Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <p class="mb-0 text-secondary">
+          Dibuat dengan <i class="bi bi-heart-fill text-danger mx-1"></i> menggunakan Bootstrap 5 &amp; HTML5 Semantik.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol Melayang Kembali ke Atas (Back to Top) -->
+  <a href="#beranda" id="backToTopBtn" class="back-to-top" aria-label="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+
+  <!-- =========================================================================
+       5. JAVASCRIPT (BOOTSTRAP 5 BUNDLE & INTERAKTIVITAS)
+       ========================================================================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    // Penanganan Formulir Kontak
+    const contactForm = document.getElementById('contactForm');
+    const formAlertSuccess = document.getElementById('formAlertSuccess');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!contactForm.checkValidity()) {
+          contactForm.classList.add('was-validated');
+        } else {
+          contactForm.classList.remove('was-validated');
+          // Tampilkan alert sukses
+          formAlertSuccess.classList.remove('d-none');
+          // Reset form input
+          contactForm.reset();
+          // Scroll halus ke arah notifikasi sukses
+          formAlertSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    }
+
+    // Tombol Back to Top & Navbar Scroll Effect
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('active');
+      } else {
+        backToTopBtn.classList.remove('active');
+      }
+    });
+
+    // Menutup Navbar Toggler otomatis saat tautan diklik pada layar ponsel (≈ 375px)
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navCollapse = document.getElementById('navmenu');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 992 && navCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

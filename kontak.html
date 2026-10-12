@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Ziyan untuk penawaran proyek web development, kolaborasi, atau kesempatan magang dan kerja sama.">
+  <meta name="author" content="Ziyan">
+  <title>Kontak | Ziyan - Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="avatar.svg">
+
+  <!-- Framework: Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. HEADER & NAVIGASI SEMANTIK (<header> & <nav>)
+       ========================================================================= -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+      <div class="container">
+        <!-- Logo Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="brand-badge">Z</span>
+          <span class="brand-name">Ziyan<span>.dev</span></span>
+        </a>
+
+        <!-- Hamburger Button untuk Tampilan Mobile (≈ 375px) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Navigasi -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#beranda"><i class="bi bi-house-door me-1"></i> Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html"><i class="bi bi-person me-1"></i> Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#proyek"><i class="bi bi-code-slash me-1"></i> Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kontak.html"><i class="bi bi-envelope me-1"></i> Kontak</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a href="#formKontakSection" class="btn btn-primary btn-sm px-3">
+                <i class="bi bi-pencil-square"></i> Tulis Pesan
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       2. KONTEN UTAMA SEMANTIK (<main>)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         HEADER HALAMAN: BREADCRUMB & HERO KONTAK
+         ----------------------------------------------------------------------- -->
+    <section class="bg-white border-bottom border-slate-200 py-4 py-md-5">
+      <div class="container">
+        <!-- Breadcrumb Navigasi Semantik -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-3">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Beranda</a></li>
+            <li class="breadcrumb-item active text-primary fw-semibold" aria-current="page">Kontak</li>
+          </ol>
+        </nav>
+
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="section-badge"><i class="bi bi-envelope-check"></i> Hubungi Pengembang</span>
+            <h1 class="display-6 fw-bold text-dark mt-2 mb-3">
+              Mari Mulai <span class="gradient-text">Percakapan</span>
+            </h1>
+            <p class="lead text-muted mb-0">
+              Punya ide proyek menarik, tawaran kerja sama, atau ingin berkonsultasi seputar website responsif? Saya siap membantu mewujudkannya.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center gap-2 p-2 px-3 rounded-pill bg-success-subtle text-success border border-success-subtle fw-semibold small">
+              <span class="status-dot"></span>
+              Status: Terbuka untuk Tawaran Baru
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         BAGIAN KARTU SALURAN KOMUNIKASI & FORMULIR (<section>)
+         ----------------------------------------------------------------------- -->
+    <section id="formKontakSection" class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- Kolom Informasi Saluran Langsung -->
+          <div class="col-lg-5">
+            <h2 class="h4 fw-bold mb-4 text-dark">Saluran Komunikasi Langsung</h2>
+
+            <!-- Card 1: Email -->
+            <div class="contact-card bg-white shadow-sm">
+              <div class="contact-icon-box">
+                <i class="bi bi-envelope-at-fill"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h3 class="h6 fw-bold mb-1 text-dark">Email Bisnis</h3>
+                <a href="mailto:ziyan.dev@example.com" class="text-decoration-none text-muted small d-block mb-1">
+                  ziyan.dev@example.com
+                </a>
+                <span class="badge bg-primary-subtle text-primary">Respon Cepat &lt; 24 Jam</span>
+              </div>
+            </div>
+
+            <!-- Card 2: WhatsApp -->
+            <div class="contact-card bg-white shadow-sm">
+              <div class="contact-icon-box">
+                <i class="bi bi-whatsapp"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h3 class="h6 fw-bold mb-1 text-dark">WhatsApp Messenger</h3>
+                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted small d-block mb-1">
+                  +62 812-3456-7890
+                </a>
+                <span class="text-muted small">Aktif Setiap Hari Kerja (08:00 - 18:00 WIB)</span>
+              </div>
+            </div>
+
+            <!-- Card 3: Lokasi -->
+            <div class="contact-card bg-white shadow-sm">
+              <div class="contact-icon-box">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="flex-grow-1">
+                <h3 class="h6 fw-bold mb-1 text-dark">Domisili</h3>
+                <address class="text-muted small mb-1">
+                  DKI Jakarta, Indonesia
+                </address>
+                <span class="text-muted small">Fleksibel: Remote / WFH / On-Site</span>
+              </div>
+            </div>
+
+            <!-- Card 4: Media Sosial -->
+            <div class="card border-0 shadow-sm rounded-4 p-4 bg-white mt-4">
+              <h3 class="h6 fw-bold mb-3 text-dark">Jejaring Sosial &amp; Profil Pengembang</h3>
+              <div class="d-flex gap-2">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:ziyan.dev@example.com" class="social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Formulir Kontak Interaktif -->
+          <div class="col-lg-7">
+            <div class="contact-form-box">
+              <h2 class="h4 fw-bold mb-2 text-dark">Kirimkan Pesan Anda</h2>
+              <p class="text-muted small mb-4">
+                Lengkapi rincian formulir di bawah ini. Semua data dijamin aman dan hanya digunakan untuk keperluan korespondensi proyek.
+              </p>
+
+              <!-- Notifikasi Feedback JS -->
+              <div id="formAlertSuccess" class="alert alert-success d-none alert-dismissible fade show" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>
+                <strong>Berhasil Terkirim!</strong> Pesan Anda telah saya terima. Saya akan merespon melalui email atau WhatsApp sesegera mungkin.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <form id="contactFormDedicated" novalidate>
+                <div class="row g-3">
+                  <!-- Nama -->
+                  <div class="col-md-6">
+                    <label for="namaLengkap" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-person"></i></span>
+                      <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="invalid-feedback">Silakan isi nama Anda.</div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <label for="emailUser" class="form-label">Alamat Email <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-envelope"></i></span>
+                      <input type="email" class="form-control" id="emailUser" placeholder="email@contoh.com" required>
+                    </div>
+                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                  </div>
+
+                  <!-- Nomor Telepon (Opsional) -->
+                  <div class="col-md-6">
+                    <label for="teleponUser" class="form-label">Nomor WhatsApp / HP (Opsional)</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-telephone"></i></span>
+                      <input type="tel" class="form-control" id="teleponUser" placeholder="+62 8xx xxxx xxxx">
+                    </div>
+                  </div>
+
+                  <!-- Kategori Keperluan -->
+                  <div class="col-md-6">
+                    <label for="kategoriKeperluan" class="form-label">Kategori Pesan <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-list-check"></i></span>
+                      <select class="form-select" id="kategoriKeperluan" required>
+                        <option value="" selected disabled>Pilih kategori...</option>
+                        <option value="Proyek Baru">Pembuatan Website Baru</option>
+                        <option value="Redesain & Responsif">Redesain &amp; Perbaikan Responsif</option>
+                        <option value="Peluang Kerja">Lowongan Kerja / Magang</option>
+                        <option value="Konsultasi Teknis">Konsultasi UI/UX &amp; Frontend</option>
+                        <option value="Lainnya">Lainnya</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback">Silakan pilih kategori pesan.</div>
+                  </div>
+
+                  <!-- Isi Pesan -->
+                  <div class="col-12">
+                    <label for="isiPesan" class="form-label">Detail Pesan / Deskripsi Kebutuhan <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="isiPesan" rows="5" placeholder="Tuliskan secara ringkas kebutuhan Anda, tenggat waktu (deadline), atau pertanyaan yang ingin disampaikan..." required></textarea>
+                    <div class="invalid-feedback">Mohon lengkapi isi pesan Anda.</div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary w-100 py-2 fs-6">
+                      <i class="bi bi-send-fill"></i> Kirim Pesan Sekarang
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         BAGIAN PERTANYAAN UMUM / FAQ ACCORDION (<section>)
+         ----------------------------------------------------------------------- -->
+    <section class="py-5 bg-white border-top border-slate-200">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-badge"><i class="bi bi-question-circle"></i> FAQ</span>
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+          <p class="section-subtitle">
+            Informasi ringkas seputar proses kerja sama, framework yang digunakan, dan jaminan kualitas antarmuka.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion" id="faqAccordion">
+
+              <!-- FAQ Item 1 -->
+              <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="bi bi-phone text-primary me-2"></i> Apakah website dijamin responsif di semua perangkat?
+                  </button>
+                </h3>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted small">
+                    Ya, tentu saja. Seluruh tata letak dikembangkan menggunakan pendekatan <strong>Mobile-First</strong> dengan sistem grid Bootstrap 5 yang adaptif. Tampilan diuji secara spesifik agar tetap rapi pada lebar layar ponsel mungil (≈ 375px), tablet, hingga layar monitor desktop lebar.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="bi bi-code-square text-primary me-2"></i> Mengapa menerapkan standar HTML5 Semantik?
+                  </button>
+                </h3>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted small">
+                    Penggunaan elemen semantik seperti <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, dan <code>&lt;footer&gt;</code> memberikan makna logis pada struktur dokumen web. Hal ini krusial untuk optimasi mesin pencari (SEO), kompatibilitas screen reader bagi aksesibilitas, serta memudahkan pemeliharaan kode (maintainability).
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item border rounded-3 mb-3 overflow-hidden shadow-sm">
+                <h3 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="bi bi-clock-history text-primary me-2"></i> Berapa lama estimasi pengerjaan sebuah proyek web?
+                  </button>
+                </h3>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted small">
+                    Waktu pengerjaan bervariasi tergantung kompleksitas dan jumlah halaman. Untuk landing page atau portofolio responsif umumnya membutuhkan 3-7 hari kerja, sedangkan aplikasi web dengan integrasi API atau database memerlukan 2-4 minggu.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       3. FOOTER SEMANTIK (<footer>)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <a class="d-flex align-items-center gap-2 text-decoration-none mb-3" href="index.html">
+            <span class="brand-badge">Z</span>
+            <span class="brand-name text-white">Ziyan<span>.dev</span></span>
+          </a>
+          <p class="small text-secondary mb-3">
+            Halaman kontak resmi Ziyan. Siap untuk kolaborasi proyek dan peluang kerja bidang web development.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:ziyan.dev@example.com" class="social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5>Navigasi Halaman</h5>
+          <ul class="footer-nav">
+            <li><a href="index.html#beranda"><i class="bi bi-chevron-right small"></i> Beranda Utama</a></li>
+            <li><a href="tentang.html"><i class="bi bi-chevron-right small"></i> Tentang Saya</a></li>
+            <li><a href="index.html#proyek"><i class="bi bi-chevron-right small"></i> Proyek Unggulan</a></li>
+            <li><a href="kontak.html"><i class="bi bi-chevron-right small"></i> Kontak (Aktif)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h5>Respon Cepat</h5>
+          <p class="small text-secondary mb-2">
+            Pesan yang masuk akan dibalas dalam rentang 1x24 jam pada hari kerja.
+          </p>
+          <a href="mailto:ziyan.dev@example.com" class="btn btn-sm btn-outline-light">
+            <i class="bi bi-envelope me-1"></i> ziyan.dev@example.com
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-secondary">
+          &copy; 2026 <strong>Ziyan</strong>. Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <p class="mb-0 text-secondary">
+          Dibangun dengan Bootstrap 5 &amp; HTML5 Semantik.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS & Form Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    const formDedicated = document.getElementById('contactFormDedicated');
+    const formAlertSuccess = document.getElementById('formAlertSuccess');
+
+    if (formDedicated) {
+      formDedicated.addEventListener('submit', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!formDedicated.checkValidity()) {
+          formDedicated.classList.add('was-validated');
+        } else {
+          formDedicated.classList.remove('was-validated');
+          formAlertSuccess.classList.remove('d-none');
+          formDedicated.reset();
+          formAlertSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

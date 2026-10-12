@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPortal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentPortal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="shadowPortal">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.35" flood-color="#000" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#bgPortal)" />
+
+  <g filter="url(#shadowPortal)">
+    <!-- App Frame -->
+    <rect x="30" y="30" width="540" height="320" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2" />
+
+    <!-- Window Titlebar -->
+    <rect x="30" y="30" width="540" height="42" rx="12" fill="#0f172a" />
+    <circle cx="55" cy="51" r="6" fill="#ef4444" />
+    <circle cx="75" cy="51" r="6" fill="#f59e0b" />
+    <circle cx="95" cy="51" r="6" fill="#10b981" />
+    <rect x="130" y="40" width="280" height="22" rx="11" fill="#1e293b" />
+    <text x="270" y="55" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">portalwarta.id • Berita &amp; Opini Kampus</text>
+
+    <!-- News Header -->
+    <rect x="50" y="85" width="500" height="36" fill="#0f172a" rx="6" />
+    <text x="65" y="108" fill="#10b981" font-family="'Segoe UI', Roboto, sans-serif" font-weight="bold" font-size="14">PORTAL WARTA</text>
+    <text x="220" y="107" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">Nasional</text>
+    <text x="280" y="107" fill="#10b981" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold">Teknologi</text>
+    <text x="350" y="107" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">Kampus</text>
+    <text x="410" y="107" fill="#cbd5e1" font-family="'Segoe UI', Roboto, sans-serif" font-size="11">Opini</text>
+
+    <!-- Main Headline News -->
+    <rect x="50" y="132" width="310" height="195" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <rect x="60" y="142" width="290" height="100" rx="6" fill="url(#accentPortal)" />
+    <!-- Headline Image vector art -->
+    <circle cx="205" cy="192" r="30" fill="#ffffff" opacity="0.25" />
+    <text x="70" y="260" fill="#38bdf8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold">TEKNOLOGI &amp; AI</text>
+    <text x="70" y="280" fill="#f8fafc" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold">Revolusi AI di Dunia Pendidikan Tinggi</text>
+    <text x="70" y="300" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10">Eksplorasi adaptasi kecerdasan buatan dalam kurikulum...</text>
+
+    <!-- Side News List -->
+    <rect x="375" y="132" width="175" height="92" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="388" y="152" fill="#10b981" font-size="9" font-weight="bold">PRESTASI</text>
+    <text x="388" y="170" fill="#f8fafc" font-size="11" font-weight="bold">Tim Robotik Raih</text>
+    <text x="388" y="186" fill="#f8fafc" font-size="11" font-weight="bold">Juara Internasional</text>
+    <text x="388" y="208" fill="#64748b" font-size="9">2 jam yang lalu</text>
+
+    <rect x="375" y="235" width="175" height="92" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="388" y="255" fill="#f59e0b" font-size="9" font-weight="bold">AGENDA</text>
+    <text x="388" y="273" fill="#f8fafc" font-size="11" font-weight="bold">Webinar Web 3.0 &amp;</text>
+    <text x="388" y="289" fill="#f8fafc" font-size="11" font-weight="bold">Keamanan Siber 2026</text>
+    <text x="388" y="311" fill="#64748b" font-size="9">Kemarin • 450 peserta</text>
+  </g>
+</svg>

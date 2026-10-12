@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5" />
+      <stop offset="100%" stop-color="#fed7aa" />
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.3" flood-color="#000" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas Circle -->
+  <circle cx="250" cy="250" r="235" fill="url(#avatarBg)" />
+  <circle cx="250" cy="250" r="225" fill="none" stroke="url(#ringGrad)" stroke-width="4" stroke-dasharray="8 6" opacity="0.8" />
+
+  <!-- Background Decorative Tech Grid & Elements -->
+  <g opacity="0.25">
+    <circle cx="100" cy="120" r="3" fill="#38bdf8" />
+    <circle cx="120" cy="120" r="3" fill="#38bdf8" />
+    <circle cx="140" cy="120" r="3" fill="#38bdf8" />
+    <circle cx="100" cy="140" r="3" fill="#38bdf8" />
+    <circle cx="120" cy="140" r="3" fill="#38bdf8" />
+    <circle cx="140" cy="140" r="3" fill="#38bdf8" />
+    
+    <path d="M 60,300 L 90,300 L 110,340" stroke="#38bdf8" stroke-width="2" fill="none" />
+    <path d="M 440,160 L 400,160 L 380,200" stroke="#c084fc" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Floating Code Badges in Background -->
+  <g filter="url(#cardShadow)">
+    <!-- Badge Top Left -->
+    <rect x="50" y="80" width="105" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="102" y="102" fill="#38bdf8" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">&lt;coder/&gt;</text>
+
+    <!-- Badge Top Right -->
+    <rect x="345" y="95" width="100" height="34" rx="17" fill="#1e293b" stroke="#818cf8" stroke-width="1.5" />
+    <text x="395" y="117" fill="#818cf8" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">{ dev: true }</text>
+  </g>
+
+  <!-- Developer Character -->
+  <g id="character">
+    <!-- Torso / Shoulders / Hoodie -->
+    <path d="M 130,470 C 130,370 170,330 250,330 C 330,330 370,370 370,470 Z" fill="url(#hoodie)" />
+    <!-- Hoodie Zip & Collar detail -->
+    <path d="M 210,330 L 250,380 L 290,330" fill="none" stroke="#38bdf8" stroke-width="3" />
+    <path d="M 250,380 L 250,470" stroke="#475569" stroke-width="3" stroke-dasharray="4 2" />
+    <polygon points="230,330 250,375 270,330" fill="#334155" />
+
+    <!-- Neck -->
+    <rect x="232" y="270" width="36" height="65" rx="10" fill="url(#skin)" />
+
+    <!-- Head -->
+    <ellipse cx="250" cy="225" rx="60" ry="72" fill="url(#skin)" />
+
+    <!-- Ears -->
+    <circle cx="188" cy="225" r="14" fill="#fed7aa" />
+    <circle cx="312" cy="225" r="14" fill="#fed7aa" />
+
+    <!-- Modern Haircut -->
+    <path d="M 188,215 C 185,150 215,130 250,130 C 290,130 315,150 312,215 C 305,180 290,165 265,165 C 240,165 210,175 188,215 Z" fill="#0f172a" />
+    <path d="M 190,175 Q 230,140 285,155 Q 240,170 190,175 Z" fill="#1e293b" />
+
+    <!-- Stylish Modern Glasses -->
+    <g>
+      <rect x="202" y="205" width="38" height="28" rx="8" fill="rgba(56, 189, 248, 0.15)" stroke="#0f172a" stroke-width="4" />
+      <rect x="260" y="205" width="38" height="28" rx="8" fill="rgba(56, 189, 248, 0.15)" stroke="#0f172a" stroke-width="4" />
+      <!-- Bridge -->
+      <path d="M 240,218 L 260,218" stroke="#0f172a" stroke-width="4" stroke-linecap="round" />
+      <!-- Glasses shine -->
+      <line x1="206" y1="210" x2="225" y2="225" stroke="#ffffff" stroke-width="2" opacity="0.7" stroke-linecap="round" />
+      <line x1="264" y1="210" x2="283" y2="225" stroke="#ffffff" stroke-width="2" opacity="0.7" stroke-linecap="round" />
+      <!-- Eyes behind lenses -->
+      <circle cx="221" cy="219" r="4.5" fill="#0f172a" />
+      <circle cx="279" cy="219" r="4.5" fill="#0f172a" />
+      <circle cx="223" cy="217" r="1.5" fill="#ffffff" />
+      <circle cx="281" cy="217" r="1.5" fill="#ffffff" />
+    </g>
+
+    <!-- Eyebrows -->
+    <path d="M 203,195 Q 220,190 238,197" fill="none" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M 262,197 Q 280,190 297,195" fill="none" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Nose -->
+    <path d="M 250,225 L 246,242 L 254,242" fill="none" stroke="#fba766" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Smile -->
+    <path d="M 235,258 Q 250,270 265,258" fill="none" stroke="#e07248" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Headphones over neck/ears -->
+    <g>
+      <path d="M 180,210 C 180,150 210,135 250,135 C 290,135 320,150 320,210" fill="none" stroke="#38bdf8" stroke-width="6" opacity="0.9" />
+      <rect x="174" y="210" width="14" height="32" rx="7" fill="#0284c7" />
+      <rect x="312" y="210" width="14" height="32" rx="7" fill="#0284c7" />
+    </g>
+
+    <!-- Laptop In Front with glowing screen -->
+    <g filter="url(#cardShadow)">
+      <polygon points="170,470 330,470 350,440 150,440" fill="url(#laptopGrad)" stroke="#475569" stroke-width="1.5" />
+      <!-- Laptop Screen Back / Glow -->
+      <polygon points="175,440 325,440 315,395 185,395" fill="#0284c7" opacity="0.85" />
+      <polygon points="182,437 318,437 310,400 190,400" fill="#38bdf8" opacity="0.35" />
+      <!-- Tech logo on laptop -->
+      <circle cx="250" cy="418" r="8" fill="#ffffff" opacity="0.9" />
+      <path d="M 247,414 L 253,418 L 247,422" fill="none" stroke="#0284c7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- Interactive Floating Status Badge Bottom Right -->
+  <g filter="url(#cardShadow)">
+    <rect x="290" y="380" width="165" height="42" rx="21" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+    <circle cx="312" cy="401" r="6" fill="#10b981" />
+    <circle cx="312" cy="401" r="10" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.5" />
+    <text x="330" y="406" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Open for Work</text>
+  </g>
+</svg>
